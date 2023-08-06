@@ -1,0 +1,72 @@
+/* 设置通用样式  start */
+
+body {
+    background-color: #f5f5f5;
+    min-width: 1200px;
+}
+
+
+/* 版心 */
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* 设置通用样式  end */
+
+
+/* top  start */
+
+.top {
+    /* background-color: aqua; */
+    overflow: hidden;
+    /* 溢出隐藏 清除高度塌陷 */
+    background-color: #e6f4ff;
+}
+
+.top-inner h1 {
+    font-size: 45px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+.top-inner p {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.top-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.iamge {
+    width: 480px;
+    height: 310px;
+    border-radius: 15px;
+}
+
+
+/* top  end */
+
+
+/* content  start */
+
+
+/* content  end */
+
+
+/* information  start */
+
+
+/* information  end */
+
+
+/* performer  start */
+
+
+/* performer  end */
