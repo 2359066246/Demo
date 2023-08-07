@@ -9,7 +9,7 @@ body {
 /* 版心 */
 
 .center {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -42,11 +42,12 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .iamge {
-    width: 480px;
-    height: 310px;
+    width: 450px;
+    /* height: 330px; */
     border-radius: 15px;
 }
 
@@ -55,6 +56,93 @@ body {
 
 
 /* content  start */
+
+.content {
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 2px 3px -2px #d5d5d5;
+}
+
+.content-introduce {
+    /* width: 75%; */
+    /* margin: 0 10px; */
+    display: flex;
+    padding: 32px 16px;
+}
+
+
+/* content-introduce-tetx start */
+
+.content-introduce-tetx {
+    width: 75%;
+    padding: 10px;
+}
+
+.content-data {
+    display: flex;
+    justify-content: end;
+}
+
+.content-data-text {
+    border-right: 2px solid #eee;
+}
+
+.content-data-text:last-child {
+    border-right: 0;
+}
+
+.content-data-text span {
+    font-size: 18px;
+    color: #519cea;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.content-data-text p {
+    font-size: 18px;
+    color: #888;
+    display: inline;
+    margin-right: 10px;
+}
+
+
+/* content-introduce-tetx end */
+
+.content-tetx {
+    margin-top: 30px;
+}
+
+.content-tetx p {
+    font-size: 22px;
+    text-indent: 2rem;
+    line-height: 36px;
+}
+
+.content-table {}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.row-item {
+    width: 50%;
+}
+
+.row-item span {
+    width: 50%;
+    display: inline-block;
+}
+
+.content-image {
+    width: 25%;
+}
+
+.content-image img {
+    width: 100%;
+}
 
 
 /* content  end */
