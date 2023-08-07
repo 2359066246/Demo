@@ -118,13 +118,18 @@ body {
     line-height: 36px;
 }
 
-.content-table {}
 
+/* 这个地方因为不会flex布局 直接改成用表格了 */
+
+
+/* 
+.content-table {}
 .row {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    background-color: #519cea;
 }
 
 .row-item {
@@ -132,9 +137,32 @@ body {
 }
 
 .row-item span {
-    width: 50%;
+    width: 100%;
+    background-color: #eee;
     display: inline-block;
+} */
+
+.content-table {
+    margin-top: 50px;
+    width: 670px;
+    height: 100px;
 }
+
+td p,
+td a {
+    font-size: 20px;
+}
+
+.content-table .th {
+    font-weight: 600;
+}
+
+.content-table .td {
+    color: #888;
+}
+
+
+/* image satrt */
 
 .content-image {
     width: 25%;
@@ -145,16 +173,157 @@ body {
 }
 
 
+/* image  */
+
+
 /* content  end */
 
 
 /* information  start */
+
+.information {
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 2px 3px -2px #d5d5d5;
+    margin-top: 20px;
+}
+
+.information-introduce {
+    padding: 32px 24px;
+}
+
+.information-introduce h2 {
+    font-size: 36px;
+    position: relative;
+}
+
+.information-introduce h2:before {
+    content: "";
+    display: block;
+    background-color: #519cea;
+    width: 16px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+
+.information-introduce h2:after {
+    content: "";
+    display: block;
+    width: 88%;
+    border-bottom: 1px solid #888;
+    position: absolute;
+    top: 18px;
+    left: 168px;
+}
+
+.information-table {
+    margin-top: 40px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.information-table tr {
+    height: 50px;
+    border-bottom: 1px dotted #888;
+}
+
+.information-table .th {
+    color: #888;
+}
 
 
 /* information  end */
 
 
 /* performer  start */
+
+.performer {
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 2px 3px -2px #d5d5d5;
+    margin-top: 20px;
+}
+
+.performer-introduce {
+    padding: 32px 24px;
+}
+
+.performer-introduce h2 {
+    font-size: 36px;
+    position: relative;
+}
+
+.performer-introduce h2:before {
+    content: "";
+    display: block;
+    background-color: #519cea;
+    width: 16px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+
+.performer-introduce h2:after {
+    content: "";
+    display: block;
+    width: 88%;
+    border-bottom: 1px solid #888;
+    position: absolute;
+    top: 18px;
+    left: 168px;
+}
+
+.performer-introduce ul {
+    margin-top: 20px;
+}
+
+.performer-introduce ul li {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #888;
+}
+
+.performer-introduce ul li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.performer-introduce ul li img {
+    width: 180px;
+}
+
+.performer-tetx {
+    margin-left: 20px;
+}
+
+.performer-tetx h3 {
+    height: 24px;
+    line-height: 24px;
+    font-size: 24px;
+    color: #519cea;
+}
+
+.performer-tetx span {
+    font-size: 18px;
+    /* height: 24px; */
+    line-height: 40px;
+}
+
+
+/* 这个地方注意一下 first-child 是不能选中的*/
+
+.performer-tetx span:first-of-type {
+    color: #888;
+}
+
+.performer-tetx p {
+    font-size: 18px;
+    /* height: 24px; */
+    line-height: 28px;
+}
 
 
 /* performer  end */
