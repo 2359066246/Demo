@@ -14,11 +14,11 @@
         <!-- top start-->
         <div class="top ">
             <div class="top-inner center">
-                <h1>{{top.top_h1}}</h1>
-                <p>{{top.top_p}}</p>
+                <h1>{{top.h1}}</h1>
+                <p>{{top.p}}</p>
                 <div class="top-images">
                     <!-- {{index}} -->
-                    <img :src=index lt="" class="iamge" v-for="(index) in top.top_images">
+                    <img :src=index lt="" class="iamge" v-for="(index) in top.image">
                     <!-- <img :src=index lt="" class="iamge">
                     <img :src=index lt="" class="iamge"> -->
                     <!-- <img src="./images/overview-image2.jpeg" alt="" class="iamge">
@@ -37,8 +37,8 @@
                         <!-- 一定要外面放个div 才可以显示 边框嘛 -->
 
                         <div class="content-data-text" v-for="index in content.content_data ">
-                            <span>  {{index.ontent_data_span}}</span>
-                            <p> {{index.ontent_data_p}}</p>
+                            <span>  {{index.span}}</span>
+                            <p> {{index.p}}</p>
                             <!-- <span>收藏</span>
                             <p>2200</p> -->
                         </div>
@@ -141,10 +141,10 @@
                 <table class="information-table">
                     <tr v-for=" index in information.information_table">
                         <td>
-                            <p class="th">{{index.information_th}}</p>
+                            <p class="th">{{index.th}}</p>
                         </td>
                         <td>
-                            <p class="td">{{index.information_td}}</p>
+                            <p class="td">{{index.td}}</p>
                         </td>
                     </tr>
 
@@ -289,6 +289,11 @@
     </div>
 </body>
 <script src="./js/vue.js "></script>
+<script src="./js/jQuery.js"></script>
+<script src="./js/data.js"></script>
 <script src="./js/inedx.js "></script>
+
+<script>
+</script>
 
 </html>

@@ -1,12 +1,34 @@
+$.ajax({
+    type: 'get', // 请求的方式，例如 GET 或 POST
+    url: 'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?', // 请求的 URL 地址
+    data: {
+        scope: 103,
+        format: "json",
+        appid: 379020,
+        bk_key: "武林外传",
+        bk_length: 600
+    }, // 这次请求要携带的数据
+
+    dataType: "jsonp",
+    success: function(res) {
+        // console.log(res)
+        return res
+
+    }, // 请求成功之后的回调函数
+    error: function() {}, //请求失败
+    complete: function() {} //请求完成
+})
+
 var vm = new Vue({
     el: '#app',
     data: {
         // 属性
         top: {
-            top_h1: '武林外传',
-            top_p: '2006年尚敬执导的电视剧',
-            top_images: ["./images/overview-image1.jpeg", "./images/overview-image2.jpeg", "./images/overview-image3.jpeg"]
+            h1: '武林外传',
+            p: '2006年尚敬执导的电视剧',
+            image: ["./images/overview-image1.jpeg", "./images/overview-image2.jpeg", "./images/overview-image3.jpeg"]
         },
+        // 回头看下 这两种方式可以遍历嘛
         // ontent_data_span: ["收藏", "点赞", "转发"],
         // ontent_data_p: ["2200", "22000", "12200"] 
         // {
@@ -14,21 +36,30 @@ var vm = new Vue({
         //     ontent_data_p: ["2200", "22000", "12200"]
         // }
         content: {
-            content_data: [{ ontent_data_span: "收藏", ontent_data_p: "2200" }, { ontent_data_span: "点赞", ontent_data_p: "22000" }, { ontent_data_span: "转发", ontent_data_p: "12200" }],
-            content_tetx: ["《武林外传》是由尚敬执导，闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎等主演的章回体古装情景喜剧。", "该剧于2006年1月2日在CCTV8黄金档首播，并陆续在中国大陆各地方电视台重播。", "该剧在香港由无线电视首播，在台湾由八大电视台首播。", "该剧的故事围绕着一个在虚拟的明代（约在万历年间）的关中地区小镇七侠镇中同福客栈里的女掌柜佟湘玉和她的几个伙计展开。这群年轻人在同一屋檐下演绎了一幕幕经典的搞笑场面，在欢笑与眼泪中陪伴观众们一起渐渐成长。", "本剧抨击了宣扬暴力的武侠文化，并对当时的社会现象进行了模仿、讽刺与批判。"],
+            content_data: [
+                { span: "收藏", p: "2200" },
+                { span: "点赞", p: "22000" },
+                { span: "转发", p: "12200" }
+            ],
+            content_tetx: [
+                "《武林外传》是由尚敬执导，闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎等主演的章回体古装情景喜剧。",
+                "该剧于2006年1月2日在CCTV8黄金档首播，并陆续在中国大陆各地方电视台重播。",
+                "该剧在香港由无线电视首播，在台湾由八大电视台首播。", "该剧的故事围绕着一个在虚拟的明代（约在万历年间）的关中地区小镇七侠镇中同福客栈里的女掌柜佟湘玉和她的几个伙计展开。这群年轻人在同一屋檐下演绎了一幕幕经典的搞笑场面，在欢笑与眼泪中陪伴观众们一起渐渐成长。",
+                "本剧抨击了宣扬暴力的武侠文化，并对当时的社会现象进行了模仿、讽刺与批判。"
+            ],
             content_table: [{}],
             content_image: "./images/overall-image.jpeg"
         },
         information: {
             information_table: [
-                { information_th: "中文名", information_td: "武林外传" },
-                { information_th: "主演", information_td: "间妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、倪虹" },
-                { information_th: "外文名", information_td: " My Own Swordsman" },
-                { information_th: "集数", information_td: "  80集(电视播出80集，网络平台81集)" },
-                { information_th: "出品公司", information_td: "北京联盟影业投资有限公司" },
-                { information_th: "每集长度", information_td: "47分钟" },
-                { information_th: "导演", information_td: "尚敬" },
-                { information_th: "编剧", information_td: "宁财神、程娇娥" },
+                { th: "中文名", td: "武林外传" },
+                { th: "主演", td: "间妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、倪虹" },
+                { th: "外文名", td: " My Own Swordsman" },
+                { th: "集数", td: "  80集(电视播出80集，网络平台81集)" },
+                { th: "出品公司", td: "北京联盟影业投资有限公司" },
+                { th: "每集长度", td: "47分钟" },
+                { th: "导演", td: "尚敬" },
+                { th: "编剧", td: "宁财神、程娇娥" },
             ]
         },
         performer: [{

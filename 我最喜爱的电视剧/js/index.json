@@ -1,0 +1,213 @@
+{
+    "id": 3767,
+    "subLemmaId": 5165423,
+    "newLemmaId": 5298,
+    "key": "武林外传",
+    "desc": "2006年尚敬执导的电视剧",
+    "title": "武林外传",
+    "card": [{
+            "key": "m4_nameC",
+            "name": "中文名",
+            "value": [
+                "武林外传"
+            ],
+            "format": [
+                "武林外传"
+            ]
+        },
+        {
+            "key": "m4_nameE",
+            "name": "外文名",
+            "value": [
+                "My Own Swordsman"
+            ],
+            "format": [
+                "My Own Swordsman"
+            ]
+        },
+        {
+            "key": "m4_class",
+            "name": "作品类型",
+            "value": [
+                "章回体、古装、情景、喜剧"
+            ],
+            "format": [
+                "章回体、古装、情景、喜剧"
+            ]
+        },
+        {
+            "key": "m4_leading",
+            "name": "主演",
+            "value": [
+                "闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、<a target=_blank href=\"/item/%E5%80%AA%E8%99%B9%E6%B4%81/137271\" data-lemmaid=\"137271\">倪虹洁</a>、<a target=_blank href=\"/item/%E8%82%96%E5%89%91/61160\" data-lemmaid=\"61160\">肖剑</a>、<a target=_blank href=\"/item/%E8%8C%83%E6%98%8E/7357417\" data-lemmaid=\"7357417\">范明</a>、<a target=_blank href=\"/item/%E4%BA%8E%E5%A8%9F/7471780\" data-lemmaid=\"7471780\">于娟</a>"
+            ],
+            "format": [
+                "闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、<a target=_blank href=\"/item/%E5%80%AA%E8%99%B9%E6%B4%81/137271\" data-lemmaid=\"137271\">倪虹洁</a>、<a target=_blank href=\"/item/%E8%82%96%E5%89%91/61160\" data-lemmaid=\"61160\">肖剑</a>、<a target=_blank href=\"/item/%E8%8C%83%E6%98%8E/7357417\" data-lemmaid=\"7357417\">范明</a>、<a target=_blank href=\"/item/%E4%BA%8E%E5%A8%9F/7471780\" data-lemmaid=\"7471780\">于娟</a>"
+            ]
+        },
+        {
+            "key": "m4_award",
+            "name": "主要奖项",
+            "value": [
+                "《新周刊》十大创新电视人奖",
+                "新浪网络盛典年度古装电视剧",
+                "电视风云榜风云大奖",
+                "国剧盛典“最有影响力电视剧”"
+            ],
+            "format": [
+                "《新周刊》十大创新电视人奖",
+                "新浪网络盛典年度古装电视剧",
+                "电视风云榜风云大奖",
+                "国剧盛典“最有影响力电视剧”"
+            ]
+        },
+        {
+            "key": "m4_area",
+            "name": "制片地区",
+            "value": [
+                "中国大陆"
+            ],
+            "format": [
+                "中国大陆"
+            ]
+        },
+        {
+            "key": "m4_director",
+            "name": "导演",
+            "value": [
+                "尚敬"
+            ],
+            "format": [
+                "尚敬"
+            ]
+        },
+        {
+            "key": "m4_scenario",
+            "name": "编剧",
+            "value": [
+                "<a target=_blank href=\"/item/%E5%AE%81%E8%B4%A2%E7%A5%9E/191679\" data-lemmaid=\"191679\">宁财神</a>、<a target=_blank href=\"/item/%E7%A8%8B%E5%A8%87%E5%A8%A5/7505286\" data-lemmaid=\"7505286\">程娇娥</a>"
+            ],
+            "format": [
+                "<a target=_blank href=\"/item/%E5%AE%81%E8%B4%A2%E7%A5%9E/191679\" data-lemmaid=\"191679\">宁财神</a>、<a target=_blank href=\"/item/%E7%A8%8B%E5%A8%87%E5%A8%A5/7505286\" data-lemmaid=\"7505286\">程娇娥</a>"
+            ]
+        },
+        {
+            "key": "m4_producer",
+            "name": "制片人",
+            "value": [
+                "张守义<sup>22</sup><a name=\"ref_22\"></a>"
+            ],
+            "format": [
+                "张守义<sup>22</sup><a name=\"ref_22\"></a>"
+            ]
+        },
+        {
+            "key": "m4_company",
+            "name": "出品公司",
+            "value": [
+                "北京联盟影业投资有限公司"
+            ],
+            "format": [
+                "北京联盟影业投资有限公司"
+            ]
+        },
+        {
+            "key": "m4_place",
+            "name": "拍摄地点",
+            "value": [
+                "北京平谷区飞龙影视基地"
+            ],
+            "format": [
+                "北京平谷区飞龙影视基地"
+            ]
+        },
+        {
+            "key": "m4_firstshow",
+            "name": "首播时间",
+            "value": [
+                "2006年1月2日<sup>18</sup><a name=\"ref_18\"></a>"
+            ],
+            "format": [
+                "2006年1月2日<sup>18</sup><a name=\"ref_18\"></a>"
+            ]
+        },
+        {
+            "key": "m4_net",
+            "name": "网络播放平台",
+            "value": [
+                "<a target=_blank href=\"/item/%E7%88%B1%E5%A5%87%E8%89%BA/1523627\" data-lemmaid=\"1523627\">爱奇艺</a><sup>17</sup><a name=\"ref_17\"></a>、<a target=_blank href=\"/item/%E5%A4%AE%E8%A7%86%E7%BD%91/5008850\" data-lemmaid=\"5008850\">央视网</a><sup>18</sup><a name=\"ref_18\"></a>、<a target=_blank href=\"/item/%E5%A4%AE%E8%A7%86%E9%A2%91/23695426\" data-lemmaid=\"23695426\">央视频</a><sup>19</sup><a name=\"ref_19\"></a>"
+            ],
+            "format": [
+                "<a target=_blank href=\"/item/%E7%88%B1%E5%A5%87%E8%89%BA/1523627\" data-lemmaid=\"1523627\">爱奇艺</a><sup>17</sup><a name=\"ref_17\"></a>、<a target=_blank href=\"/item/%E5%A4%AE%E8%A7%86%E7%BD%91/5008850\" data-lemmaid=\"5008850\">央视网</a><sup>18</sup><a name=\"ref_18\"></a>、<a target=_blank href=\"/item/%E5%A4%AE%E8%A7%86%E9%A2%91/23695426\" data-lemmaid=\"23695426\">央视频</a><sup>19</sup><a name=\"ref_19\"></a>"
+            ]
+        },
+        {
+            "key": "m4_number",
+            "name": "集数",
+            "value": [
+                "80 集(电视播出80集，网络平台81集)<sup>18</sup><a name=\"ref_18\"></a><sup>17</sup><a name=\"ref_17\"></a>"
+            ],
+            "format": [
+                "80 集(电视播出80集，网络平台81集)<sup>18</sup><a name=\"ref_18\"></a><sup>17</sup><a name=\"ref_17\"></a>"
+            ]
+        },
+        {
+            "key": "m4_numlength",
+            "name": "每集时长",
+            "value": [
+                "47 分钟"
+            ],
+            "format": [
+                "47 分钟"
+            ]
+        },
+        {
+            "key": "m4_customDefault",
+            "name": "首播平台",
+            "value": [
+                "<a target=_blank href=\"/item/CCTV8/3539315\" data-lemmaid=\"3539315\">CCTV8</a>"
+            ],
+            "format": [
+                "<a target=_blank href=\"/item/CCTV8/3539315\" data-lemmaid=\"3539315\">CCTV8</a>"
+            ]
+        }
+    ],
+    "image": "https://bkimg.cdn.bcebos.com/pic/3b292df5e0fe9925bc310a221efd49df8db1cb13db3e?x-bce-process=image/format,f_auto",
+    "src": "3b292df5e0fe9925bc310a221efd49df8db1cb13db3e",
+    "imageHeight": 1800,
+    "imageWidth": 1200,
+    "isSummaryPic": "y",
+    "abstract": "《武林外传》是由尚敬执导，闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎等主演的章回体古装情景喜剧。该剧于2006年1月2日在CCTV8黄金档首播，并陆续在中国大陆各地方电视台重播。该剧在香港由无线电视首播，在台湾由八大电视台首播。该剧的故事围绕着一个在虚拟的明代（约在万历年间）的关中地区小镇七侠镇中同福客栈里的女掌柜佟湘玉和她的几个伙计展开。这群年轻人在同一屋檐下演绎了一幕幕经典的搞笑场面，在欢笑与眼泪中陪伴观众们一起渐渐成长。本剧抨击了宣扬暴力的武侠文化，并对当时的社会现象进行了模仿、讽刺与批判。",
+    "moduleIds": [
+        3039862730,
+        3039862731,
+        3039862732,
+        4780498048,
+        4780498049,
+        4780498055,
+        3770127778,
+        4763677704,
+        4771951253,
+        4771951254
+    ],
+    "url": "http://baike.baidu.com/subview/3767/5165423.htm",
+    "wapUrl": "http://wapbaike.baidu.com/item/%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0/5298",
+    "hasOther": 1,
+    "totalUrl": "http://baike.baidu.com/view/3767.htm",
+    "catalog": [
+        "<a href='http://baike.baidu.com/subview/3767/5165423.htm#1'>剧情简介</a>",
+        "<a href='http://baike.baidu.com/subview/3767/5165423.htm#2'>分集剧情</a>",
+        "<a href='http://baike.baidu.com/subview/3767/5165423.htm#3'>演职员表</a>",
+        "<a href='http://baike.baidu.com/subview/3767/5165423.htm#4'>角色介绍</a>"
+    ],
+    "wapCatalog": [
+        "<a href='http://wapbaike.baidu.com/item/%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0/5298#1'>剧情简介</a>",
+        "<a href='http://wapbaike.baidu.com/item/%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0/5298#2'>分集剧情</a>",
+        "<a href='http://wapbaike.baidu.com/item/%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0/5298#3'>演职员表</a>",
+        "<a href='http://wapbaike.baidu.com/item/%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0/5298#4'>角色介绍</a>"
+    ],
+    "logo": "http://img.baidu.com/img/baike/logo-baike.gif",
+    "copyrights": "以上内容来自百度百科平台，由百度百科网友创作。",
+    "customImg": "",
+    "redirect": []
+}
