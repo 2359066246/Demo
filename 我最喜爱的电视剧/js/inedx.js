@@ -1,7 +1,9 @@
 var vm = new Vue({
     el: '#app',
     data: {
-        // 属性
+        res: null,
+        // 原本的数据
+        bk_key: "武林外传",
         top: {
             h1: '武林外传',
             p: '2006年尚敬执导的电视剧',
@@ -66,36 +68,54 @@ var vm = new Vue({
 
         ]
     },
+    methods: {
+        // var baidu_data = {};
+        // var self = this
+        query() {
+            console.log(this.bk_key)
+            var bk_key = this.bk_key
+            $.ajax({
+                type: 'get', // 请求的方式，例如 GET 或 POST
+                url: 'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?', // 请求的 URL 地址
+                data: {
+                    scope: 103,
+                    format: "json",
+                    appid: 379020,
+                    bk_key,
+                    bk_length: 600
+                }, // 这次请求要携带的数据
+
+                dataType: "jsonp",
+                success: (data) => {
+                    // console.log(res)
+                    // baidu_data = res
+                    console.log(data)
+                    if (data.errno == 2) {
+                        return console.log("请求有问题")
+                    } else {
+                        this.res = data;
+                        this.top.h1 = data.key
+                        this.top.p = data.desc
+                        this.content.content_image = data.image;
+                        // 这个地方 想把句号再加上  不知道应该咋操作
+                        this.content.content_tetx = data.abstract.split("。");
+
+                    }
+                    // console.log(baidu_data)
+                    // return baidu_data
+
+                }, // 请求成功之后的回调函数
+                error: function() {
+                    alert("网络好像有点小问题呢")
+                }, //请求失败
+                complete: function() {
+
+                    } //请求完成
+            })
+        }
+
+    },
     beforeCreate() {
 
-        $.ajax({
-            type: 'get', // 请求的方式，例如 GET 或 POST
-            url: 'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?', // 请求的 URL 地址
-            data: {
-                scope: 103,
-                format: "json",
-                appid: 379020,
-                bk_key: "武林外传",
-                bk_length: 600
-            }, // 这次请求要携带的数据
-
-            dataType: "jsonp",
-            success: function(res) {
-                // console.log(res)
-                var baidu_data = res
-                if (baidu_data.errno == 2) {
-                    return console.log("请求有问题")
-                }
-                console.log(baidu_data)
-                return baidu_data
-
-            }, // 请求成功之后的回调函数
-            error: function() {
-                alert("网络好像有点小问题呢")
-            }, //请求失败
-            complete: function() {
-
-                } //请求完成
-        })
     }
 })

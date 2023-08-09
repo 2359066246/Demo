@@ -44,8 +44,9 @@ body {
 
 .search input[type=text] {
     width: 395px;
-    font-size: 16px;
     height: 28px;
+    color: #ccc;
+    font-size: 20px;
     line-height: 28px;
     background: 0 0;
     padding: 6px 36px 4px 8px;
