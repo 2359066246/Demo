@@ -4,6 +4,7 @@ var vm = new Vue({
         res: null,
         // 原本的数据
         bk_key: "武林外传",
+        isShow: false,
         top: {
             h1: '武林外传',
             p: '2006年尚敬执导的电视剧',
@@ -69,10 +70,18 @@ var vm = new Vue({
         ]
     },
     methods: {
-        // var baidu_data = {};
-        // var self = this
+        show() {
+            if (this.bk_key == "" | " ") {
+                return this.isShow = false
+            } else if (this.isShow == false) {
+                return this.isShow = true
+            } else {
+                return this.isShow = false
+            }
+        },
+
         query() {
-            console.log(this.bk_key)
+            // console.log(this.bk_key)
             var bk_key = this.bk_key
             $.ajax({
                 type: 'get', // 请求的方式，例如 GET 或 POST
@@ -89,9 +98,9 @@ var vm = new Vue({
                 success: (data) => {
                     // console.log(res)
                     // baidu_data = res
-                    console.log(data)
+                    // console.log(data)
                     if (data.errno == 2) {
-                        return console.log("请求有问题")
+                        return alert("可能是网络出了小差，再点击搜索一下吧")
                     } else {
                         this.res = data;
                         this.top.h1 = data.key
@@ -99,6 +108,7 @@ var vm = new Vue({
                         this.content.content_image = data.image;
                         // 这个地方 想把句号再加上  不知道应该咋操作
                         this.content.content_tetx = data.abstract.split("。");
+                        this.top.image = ""
 
                     }
                     // console.log(baidu_data)
@@ -106,7 +116,7 @@ var vm = new Vue({
 
                 }, // 请求成功之后的回调函数
                 error: function() {
-                    alert("网络好像有点小问题呢")
+                    alert("网络好像有点小问题呢，要不还是算了吧")
                 }, //请求失败
                 complete: function() {
 

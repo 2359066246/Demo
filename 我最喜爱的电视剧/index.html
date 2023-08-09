@@ -18,7 +18,8 @@
                     <img src="./images/baike-logo.png" alt="">
                 </div>
                 <div class="search">
-                    <input type="text" v-model='bk_key' value="武林外传">
+                    <!-- 这个地方点击事件就会有bug -->
+                    <input type="text" v-model='isShow?"": bk_key' value="" @click="show">
                     <input type="button" name=" " id=" " value="进入词条" @click="query">
                 </div>
             </div>
