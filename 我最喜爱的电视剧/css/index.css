@@ -17,6 +17,57 @@ body {
 /* 设置通用样式  end */
 
 
+/* top-nav start */
+
+.header {
+    background-color: #fff;
+}
+
+.header-inner {
+    width: 50%;
+    height: 140px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inner-img {
+    height: 44px;
+}
+
+.header-inner-img img {
+    height: 100%;
+}
+
+.search {}
+
+.search input[type=text] {
+    width: 395px;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    background: 0 0;
+    padding: 6px 36px 4px 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b8b8b8 #ccc #ccc #b8b8b8;
+    border-right: 0;
+}
+
+.search input[type=button] {
+    width: 104px;
+    font-size: 16px;
+    height: 40px;
+    background-color: #3388ff;
+    color: #fff;
+    border: 0;
+}
+
+
+/* top-nav end */
+
+
 /* top  start */
 
 .top {
