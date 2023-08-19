@@ -67,7 +67,7 @@ submit.onclick = function() {
         地址：${address.value}
         手机号：${form.phone.value}
         期待送达时间：${form.time.value}
-        备注：${notes.valuet}
+        备注：${notes.value}
         支付方式：${form.money.value}
     `;
     alert(str)
