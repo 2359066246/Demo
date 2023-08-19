@@ -94,11 +94,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .iamge {
-    width: 450px;
+    flex-basis: 32%;
+    /* width: 450px; */
+    width: 0px;
     /* height: 330px; */
     border-radius: 15px;
 }

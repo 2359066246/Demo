@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            display: flex;
+            /* 居中显示 */
+            /* justify-content: center; */
+            /* 后面对齐 */
+            /* justify-content: flex-end; */
+            /* 单元素 垂直居中 对齐 */
+            align-items: center;
+            /* 这个地方因为元素只有一个所以是需要垂直居中 */
+            /* 居中 */
+            justify-content: center;
+            /* 主轴居中 侧轴居下*/
+            align-items: flex-end;
+            /* 主轴居后 侧轴居下*/
+            justify-content: flex-end;
+        }
+        
+        .item {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span class="item"></span>
+    </div>
+</body>
+
+</html>

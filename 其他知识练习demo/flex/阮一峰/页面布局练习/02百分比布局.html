@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Grid {
+            display: flex;
+            background-color: red;
+        }
+        
+        .Grid-cell {
+            flex: 1;
+        }
+        
+        .Grid-cell.u-full {
+            flex: 0 0 100%;
+        }
+        
+        .Grid-cell.u-1of2 {
+            flex: 0 0 50%;
+        }
+        
+        .Grid-cell.u-1of3 {
+            flex: 0 0 33.3333%;
+        }
+        
+        .Grid-cell.u-1of4 {
+            flex: 0 0 25%;
+        }
+        /* 这个地方 不是很多理解 */
+    </style>
+</head>
+
+<body>
+    <div class="Grid">
+        <div class="Grid-cell u-1of4">元素1</div>
+        <div class="Grid-cell">元素2</div>
+        <div class="Grid-cell u-1of3">元素3</div>
+    </div>
+</body>
+
+</html>

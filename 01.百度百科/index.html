@@ -28,8 +28,9 @@
         <!-- top start-->
         <div class="top ">
             <div class="top-inner center ">
-                <h1>{{top.h1}}</h1>
-                <p>{{top.p}}</p>
+                <!-- 这个地方 替换成 v-text 但是还是有出现 闪屏的情况 -->
+                <h1 v-text="top.h1"></h1>
+                <p v-text="top.p"></p>
                 <div class="top-images ">
                     <!-- {{index}} -->
                     <img :src=index lt=" " class="iamge " v-for="(index) in top.image ">
@@ -51,8 +52,8 @@
                         <!-- 一定要外面放个div 才可以显示 边框嘛 -->
 
                         <div class="content-data-text " v-for="index in content.content_data ">
-                            <span>  {{index.span}}</span>
-                            <p> {{index.p}}</p>
+                            <span v-text="index.span"></span>
+                            <p v-text="index.p"></p>
                             <!-- <span>收藏</span>
                             <p>2200</p> -->
                         </div>
@@ -66,7 +67,7 @@
                         </div> -->
                     </div>
                     <div class="content-tetx ">
-                        <p v-for="index in content.content_tetx ">{{index}}</p>
+                        <p v-for="index in content.content_tetx " v-text="index"></p>
                         <!-- <p>《武林外传》是由尚敬执导，闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎等主演的章回体古装情景喜剧。</p>
                         <p>该剧于2006年1月2日在CCTV8黄金档首播，并陆续在中国大陆各地方电视台重播。</p>
                         <p>该剧在香港由无线电视首播，在台湾由八大电视台首播。</p>
@@ -153,12 +154,12 @@
             <div class="information-introduce ">
                 <h2>基本信息</h2>
                 <table class="information-table ">
-                    <tr v-for=" index in information.information_table ">
+                    <tr v-for=" index in information.table ">
                         <td>
-                            <p class="th ">{{index.th}}</p>
+                            <p class="th" v-text="index.name"></p>
                         </td>
                         <td>
-                            <p class="td ">{{index.td}}</p>
+                            <p class="td" v-text="index.value[0]"></p>
                         </td>
                     </tr>
 
@@ -263,10 +264,10 @@
                     <li v-for=" index in performer ">
                         <img :src=index.img alt=" ">
                         <div class="performer-tetx ">
-                            <h3>{{index.h3}}</h3>
-                            <span>{{index.span1}} </span>
-                            <span>{{index.span2}}</span>
-                            <p>{{index.p}}</p>
+                            <h3 v-text="index.h3"></h3>
+                            <span v-text="index.span1"></span>
+                            <span v-text="index.span2"></span>
+                            <p v-text="index.p"></p>
                         </div>
                     </li>
                     <!-- <li>

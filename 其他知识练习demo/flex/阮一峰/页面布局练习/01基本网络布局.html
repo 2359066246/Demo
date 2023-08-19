@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Grid {
+            width: 80%;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .Grid-cell {
+            flex-basis: 100%;
+            /* flex: 1; */
+        }
+        
+        .Grid-cell-1 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .Grid-cell-1 span {
+            height: 50px;
+            line-height: 50px;
+            background-color: aqua;
+            /* flex: ; */
+            flex-basis: 48%;
+            text-align: center;
+        }
+        
+        .Grid-cell-2 {
+            display: flex;
+        }
+        
+        .Grid-cell-2 span {
+            height: 50px;
+            line-height: 50px;
+            background-color: aqua;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .Grid-cell-3 {
+            display: flex;
+        }
+        
+        .Grid-cell-3 span {
+            height: 50px;
+            line-height: 50px;
+            background-color: aqua;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .Grid-cell-4 {
+            display: flex;
+        }
+        
+        .Grid-cell-4 span {
+            background-color: aqua;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Grid">
+        <div class="Grid-cell">
+            <div class="Grid-cell-1">
+                <span>1/2</span>
+                <span>1/2</span>
+            </div>
+        </div>
+        <div class="Grid-cell">
+            <div class="Grid-cell-2">
+                <span>1/3</span>
+                <span>1/3</span>
+                <span>1/3</span>
+            </div>
+        </div>
+        <div class="Grid-cell">
+            <div class="Grid-cell-3">
+                <span>1/4</span>
+                <span>1/4</span>
+                <span>1/4</span>
+                <span>1/4</span>
+            </div>
+        </div>
+        <div class="Grid-cell">
+            <div class="Grid-cell-4">
+                <span>Full-height, even when my content doesn't fillthe space</span>
+                <span>Lorem ipsum dolor sit amet, consecteturadipiscing elit. Vestibulum mollis velit nongravida venenatis. Praesent consequat lectuspurus, ut scelerisque velit condimentum eu.Maecenas sagittis ante ut turpis variusinterdum. Quisque tellus ipsum, eleifend nonipsum id, suscipit ultricies neque.</span>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

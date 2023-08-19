@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        /* 原本的写法是这样 我之前好像是父元素的宽太大了，然后就第四个元素不会换行 */
+        /* .box {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        } */
+        
+        .column {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .item {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: black;
+            display: block;
+        }
+        
+        .item:nth-child(4) {
+            /* align-self: flex-end; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+
+    </div>
+</body>
+
+</html>

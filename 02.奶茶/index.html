@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奶茶点单系统</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <!-- top start -->
+    <div class="top">
+        <div class="top-inner">
+            <div class="top-img">
+                <img src="./image/mt1.jpg" alt="">
+                <img src="./image/mt2.jpg" alt="">
+                <img src="./image/mt3.jpg" alt="">
+                <img src="./image/mt4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- top end -->
+
+    <!-- from start -->
+    <div class="form">
+        <form id="form" name="form">
+            <table>
+                <tr>
+                    <td>奶茶口味：</td>
+                    <td>
+                        <!--name 一样才可以多选  id  是用来绑定元素 -->
+                        <div class="radio-item">
+                            <input type="radio" id="ynbb" name="nc_name" value="芋泥波波" checked> <label for="ynbb">芋泥波波</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="tzyy" name="nc_name" value="芝芝桃桃" required> <label for="tzyy">芝芝桃桃</label>
+
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="drpt" name="nc_name" value="多肉葡萄" required> <label for="drpt">多肉葡萄</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>数量：</td>
+                    <td>
+                        <input type="number" min="0" name="number" max="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>杯型：</td>
+                    <td>
+                        <div class="radio-item">
+                            <input type="radio" id="bx_cdb" name="bx" value="超大杯" checked required> <label for="bx_cdb">超大杯</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="bx_db" name="bx" value="大杯" required> <label for="bx_db">大杯</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="bx_zb" name="bx" value="中杯" required> <label for="bx_zb">中杯</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>甜度：</td>
+                    <td>
+                        <select name="sugar" id="" required>
+                            <option value="全糖">全糖</option>
+                            <option value="七份糖">七分糖</option>
+                            <option value="半份糖">半分糖</option>
+                            <option value="三分糖">三分糖</option>
+                            <option value="无糖">无糖</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>免费小料：</td>
+                    <td>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="xl_bb" name="xl" value="波霸"> <label for="xl_bb">波霸</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="xl_yg" name="xl" value="椰果"> <label for="xl_yg">椰果</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="xl_xml" name="xl" value="西米露"> <label for="xl_xml">西米露</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="xl_cd" name="xl" value="茶冻"> <label for="xl_cd">茶冻</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="xl_hd" name="xl" value="红豆"> <label for="xl_hd">红豆</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="xl_sxc" name="xl" value="仙草"> <label for="xl_sxc">烧仙草</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>加价小料：</td>
+                    <td>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="jlxl_bql" name="jlxl" value="冰淇淋"> <label for="jlxl_bql">冰淇淋（￥4）</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="jlxl_bd" name="jlxl" value="布丁"> <label for="jlxl_bd">布丁（￥3）</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="jlxl_ns" name="jlxl" value="奶霜"> <label for="jlxl_ns">奶霜（￥2）</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>是否去冰：</td>
+                    <td>
+                        <!--name 一样才可以多选  id  是用来绑定元素 -->
+                        <input type="radio" id="qb_s" name="qb" value="是" required checked> <label for="qb_s">是</label>
+                        <input type="radio" id="qb_f" name="qb" value="否" required> <label for="qb_f">否</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>是否去茶底：</td>
+                    <td>
+                        <!--name 一样才可以多选  id  是用来绑定元素 -->
+                        <input type="radio" id="cd_s" name="cd" value="是" required> <label for="cd_s">是</label>
+                        <input type="radio" id="cd_f" name="cd" value="否"> <label for="cd_f">否</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>你的地址：</td>
+                    <td>
+                        <textarea name="" id="address" cols="30" rows="10" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>你的手机号:</td>
+                    <td> <input type="text" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        期待送达时间:
+                    </td>
+                    <td>
+                        <input type="time" name="time" id="" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>备注：</td>
+                    <td>
+                        <textarea name="" id="notes" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>支付方式</td>
+                    <td>
+                        <input type="radio" id="wx" name="money" value="wx" required> <label for="wx">微信支付</label>
+                        <input type="radio" id="zfb" name="money" value="zfb" required> <label for="zfb">支付宝</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button">
+                            <input type="submit" id="submit" value="提交">
+                            <input type="reset">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+    <!-- from end -->
+    <div class="scroll-to-top">
+        <a href="#">回到定板</a>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

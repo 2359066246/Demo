@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .warp {
+            background-color: yellow;
+            display: flex;
+        }
+        
+        .warp div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 2px solid #000;
+        }
+        /* 项目排序次序 order 属性
+        属性值：数值、没有单位，默认0，数值越小，排列越靠前
+        */
+        
+        .warp1 div:nth-child(1) {
+            order: 1;
+        }
+        
+        .warp1 div:nth-child(2) {
+            order: 2;
+        }
+        /* 项目的放大比例 flex-grow 属性
+        属性值 ：数值，没有单位，默认0 表示不放大 */
+        
+        .warp2 div:nth-child(1) {
+            flex-grow: 1;
+        }
+        
+        .warp2 div:nth-child(2) {
+            flex-grow: 2;
+        }
+        /* 项目的缩小比例  flex-shrink 属性
+        属性值 ：数值，没有单位，默认1 表示空间不足时 等比例缩小 ：0空间不足 不缩小
+        */
+        
+        .warp3 div {
+            width: 300px;
+        }
+        
+        .warp3 div:nth-child(1) {
+            flex-shrink: 0;
+        }
+        
+        .warp3 div:nth-child(2) {
+            flex-shrink: 1;
+        }
+        /* align-self属性  选中的项目的对齐方式 */
+        
+        .warp4 {
+            height: 300px;
+            align-items: center;
+        }
+        
+        .warp4 div:nth-child(1) {
+            height: auto;
+            align-self: auto;
+            /* 默认值，继承父元素的 align-items 属性，如果父元素没有则值 为stretch; */
+        }
+        
+        .warp4 div:nth-child(2) {
+            height: auto;
+            align-self: stretch;
+            /* 撑满整个容器的高度 */
+        }
+        
+        .warp4 div:nth-child(3) {
+            height: auto;
+            align-self: flex-start;
+            /* 交叉轴起点对齐 */
+        }
+        
+        .warp4 div:nth-child(4) {
+            height: auto;
+            align-self: flex-end;
+            /* 交叉轴终点对齐 */
+        }
+        
+        .warp4 div:nth-child(5) {
+            height: auto;
+            align-self: center;
+            /* 交叉轴中点对齐 */
+        }
+        
+        .warp4 div:nth-child(6) {
+            height: auto;
+            line-height: 50px;
+            align-self: baseline;
+            /* 第一行文字的基线对齐 */
+        }
+        
+        .warp4 div:nth-child(7) {
+            height: auto;
+            line-height: 100px;
+            align-self: baseline;
+            /* 交叉轴终点对齐 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="warp warp1">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+    <hr>
+    <div class="warp warp2">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+    <hr>
+
+    <div class="warp warp3">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+    </div>
+    <hr>
+
+    <div class="warp warp4">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+    </div>
+    <hr>
+    <!--
+    <div class="warp warp5">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div> -->
+
+
+</body>
+
+</html>
