@@ -5,6 +5,11 @@ body {
     min-width: 1200px;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /* 版心 */
 
@@ -24,7 +29,8 @@ body {
 }
 
 .header-inner {
-    width: 50%;
+    width: 40%;
+    min-width: 1000px;
     height: 140px;
     /* background-color: antiquewhite; */
     display: flex;
@@ -40,10 +46,13 @@ body {
     height: 100%;
 }
 
-.search {}
+.search {
+    margin-left: 20px;
+    display: flex;
+}
 
 .search input[type=text] {
-    width: 395px;
+    min-width: 395px;
     height: 28px;
     color: #ccc;
     font-size: 20px;
@@ -54,6 +63,7 @@ body {
     border-style: solid;
     border-color: #b8b8b8 #ccc #ccc #b8b8b8;
     border-right: 0;
+    flex: 1;
 }
 
 .search input[type=button] {
@@ -176,6 +186,9 @@ body {
 /* 这个地方因为不会flex布局 直接改成用表格了 */
 
 
+/* 这个地方 用flex 布局 重新写了 */
+
+
 /* 
 .content-table {}
 .row {
@@ -196,7 +209,14 @@ body {
     display: inline-block;
 } */
 
-.content-table {
+
+/* content-table start */
+
+
+/* 这个地方重新写下 */
+
+
+/* .content-table {
     margin-top: 50px;
     width: 670px;
     height: 100px;
@@ -213,7 +233,35 @@ td a {
 
 .content-table .td {
     color: #888;
+} */
+
+.content-table {
+    margin-top: 24px;
 }
+
+.content-table .row {
+    display: flex;
+    padding: 12px 30px;
+    font-size: 14px;
+}
+
+.content-table .row .col {
+    flex: 1;
+    display: flex;
+}
+
+.content-table .row .col .name {
+    flex-basis: 25%;
+    font-weight: bold;
+    color: #333;
+}
+
+.content-table .row .col .data {
+    color: #747474;
+}
+
+
+/* content-table end */
 
 
 /* image satrt */
@@ -272,7 +320,14 @@ td a {
     left: 168px;
 }
 
-.information-table {
+
+/* 基本信息的表格 start */
+
+
+/* 重新写下 */
+
+
+/* .information-table {
     margin-top: 40px;
     width: 100%;
     line-height: 50px;
@@ -285,7 +340,36 @@ td a {
 
 .information-table .th {
     color: #888;
+} */
+
+.information-table {
+    margin-top: 35px;
 }
+
+.information-table .row {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px dotted #888;
+    align-items: center;
+}
+
+.information-table .row .col {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.information-table .row .col .name {
+    flex-basis: 15%;
+    font-weight: bold;
+    color: #747474;
+}
+
+.information-table .row .col .data {
+    color: #333;
+}
+
+
+/* 基本信息的表格 end */
 
 
 /* information  end */

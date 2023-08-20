@@ -97,7 +97,8 @@
                         </div>
                     </div>
                 </div> -->
-                    <table class="content-table ">
+                    <!-- content-table start -->
+                    <!-- <table class="content-table ">
                         <tr>
                             <td>
                                 <p class="th ">
@@ -138,7 +139,32 @@
                                 </p>
                             </td>
                         </tr>
-                    </table>
+                    </table> -->
+
+                    <div class="content-table">
+                        <div class="row">
+                            <div class="col">
+                                <span class="name">类型</span>
+                                <span class="data">章回体、古装、情景、喜剧</span>
+                            </div>
+                            <div class="col">
+                                <span class="name">导演</span>
+                                <span class="data"><a href="#">导演</a></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span class="name">首播时间</span>
+                                <span class="data">2006年1月2日</span>
+                            </div>
+                            <div class="col">
+                                <span class="name">中文名</span>
+                                <span class="data">武林外传</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content-table end -->
                 </div>
                 <div class="content-image ">
                     <img :src=content.content_image alt=" ">
@@ -153,7 +179,7 @@
         <div class="information center ">
             <div class="information-introduce ">
                 <h2>基本信息</h2>
-                <table class="information-table ">
+                <!-- <table class="information-table ">
                     <tr v-for=" index in information.table ">
                         <td>
                             <p class="th" v-text="index.name"></p>
@@ -163,7 +189,7 @@
                         </td>
                     </tr>
 
-                    <!-- <tr>
+                    <tr>
                         <td>
                             <p class="th ">
                                 中文名
@@ -184,8 +210,8 @@
                                 间妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、倪虹
                             </p>
                         </td>
-                    </tr> -->
-                    <!-- <tr>
+                    </tr>
+                    <tr>
                         <td>
                             <p class="th ">
                                 外文名
@@ -250,8 +276,51 @@
                                 宁财神、程娇娥
                             </p>
                         </td>
-                    </tr> -->
-                </table>
+                    </tr>
+                </table> -->
+                <div class="information-table">
+                    <div class="row">
+                        <div class="col">
+                            <span class="name">中文名</span>
+                            <span class="data">武林外传</span>
+                        </div>
+                        <div class="col">
+                            <span class="name">主演</span>
+                            <span class="data">闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、倪虹</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <span class="name">外文名</span>
+                            <span class="data">My Own Swordsman</span>
+                        </div>
+                        <div class="col">
+                            <span class="name">集数</span>
+                            <span class="data">80集(电视播出80集，网络平台81集)</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="name">出品公司</span>
+                            <span class="data">北京联盟影业投资有限公司</span>
+                        </div>
+                        <div class="col">
+                            <span class="name">每集长度</span>
+                            <span class="data">47分钟</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="name">导演</span>
+                            <span class="data">尚敬</span>
+                        </div>
+                        <div class="col">
+                            <span class="name"> 编剧</span>
+                            <span class="data">宁财神、程娇娥</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- information end-->
