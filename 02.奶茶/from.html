@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取表单元素</title>
+    <style>
+        /* 通用样式 */
+        
+        form,
+        div,
+        label,
+        input,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* 通用样式 */
+        
+        form {
+            margin: 20px auto;
+            width: 500px;
+            min-width: 350px;
+            border: 1px solid #000;
+            /* background-color: aquamarine; */
+            font-size: 24px;
+        }
+        
+        input {
+            font-size: 20px;
+            color: #ccc;
+        }
+        
+        .row {
+            display: flex;
+            height: 44px;
+            margin: 15px 0;
+        }
+        
+        .loc-r label {
+            width: 79px;
+            line-height: 44px;
+            text-align: center;
+        }
+        
+        .row label::after {
+            content: " :";
+        }
+        
+        .row .loc-l {
+            flex: 1;
+            /* background-color: aqua; */
+        }
+        
+        .row .loc-l input[type="text"] {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* 按钮 */
+        
+        .row:last-child {
+            justify-content: center;
+        }
+        
+        .loc {
+            flex-basis: 30%;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm">
+        <div class="row">
+            <div class="loc-r">
+                <label for="name">姓名</label>
+            </div>
+            <div class="loc-l">
+                <input type="text" name="name" id="name" value="张三">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="loc-r">
+                <label for="age">年龄</label>
+            </div>
+            <div class="loc-l">
+                <input type="text" name="age" id="age" value="18">
+            </div>
+        </div>
+        <div class="row">
+            <div class="loc-r">
+                <label for="grade">年级</label>
+            </div>
+            <div class="loc-l">
+                <label for="grade-1">一年级</label>
+                <input type="radio" name="grade" id="grade-1" value="一年级">
+                <label for="grade-2">二年级</label>
+                <input type="radio" name="grade" id="grade-2" value="二年级">
+                <label for="grade-3">三年级</label>
+                <input type="radio" name="grade" id="grade-3" value="三年级">
+            </div>
+        </div>
+        <div class="row">
+            <div class="loc-r">
+                兴趣爱好
+            </div>
+            <div class="loc-l">
+                <label for="lq">篮球</label>
+                <input type="checkbox" name="interest" id="lq" value="篮球">
+                <label for="zq">足球</label>
+                <input type="checkbox" name="interest" id="zq" value="足球">
+                <label for="ymq">羽毛球</label>
+                <input type="checkbox" name="interest" id="ymq" value="羽毛球">
+            </div>
+        </div>
+        <div class="row">
+            <div class="loc-r">
+                其他
+            </div>
+            <div class="loc-l">
+                <input type="text" name="other" id="name" value="张三">
+            </div>
+        </div>
+        <div class="row">
+            <div class="loc">
+                <input type="submit" value="提交">
+                <input type="reset">
+            </div>
+        </div>
+
+    </form>
+    <script>
+        const form = document.querySelector('#myForm');
+        const formData = new FormData(form);
+
+        // 获取表单数据中的 name 和 age 字段
+        const name = formData.get('name');
+        const age = formData.get('age');
+        const grade = formData.get("grade");
+        const interest = formData.get("interest");
+        const other = formData.get("other");
+
+
+        // for (var pair of formData.entries()) {
+        //     const propName = pair[0];
+        //     const propVal = pair[1];
+
+        //     if (formVals[propName]) {
+        //         formVals[propName] = [propVal].concat(formVals[propName]);
+        //     } else {
+        //         formVals[propName] = propVal;
+        //     }
+        // }
+        // 将表单数据转换为 JSON 字符串
+        console.log(formData.entries());
+        // console.log(Object.fromEntries(formData.entries()));
+        const formJson = JSON.stringify(Object.fromEntries(formData.entries()));
+    </script>
+</body>
+
+</html>

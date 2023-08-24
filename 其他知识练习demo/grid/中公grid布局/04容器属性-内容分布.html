@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            display: flex;
+        }
+        
+        .wrap {
+            width: 350px;
+            height: 500px;
+            background: yellow;
+            margin-right: 20px;
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 100px);
+            /* 
+            justify-items属性、align-items属性、place-items属性  内容分布
+                justify-items: 网格元素水平呈现方式
+                align-items: 网格元素垂直呈现方式
+                place-items: align-items  justify-items;
+                    属性值：
+                        start 单元格左侧或顶端对齐
+                        end  单元格右侧或底端对齐
+                        center 单元格中间对齐
+                        stretch 默认值，占满单元格的整个宽度或高度
+            */
+        }
+        
+        .wrap div {
+            border: 1px solid #000;
+        }
+        
+        .wrap1 {
+            justify-items: start;
+            justify-items: center;
+            justify-items: end;
+            /* justify-items: stretch; */
+        }
+        
+        .wrap2 {
+            align-items: start;
+            align-items: center;
+            align-items: end;
+            /* align-items: stretch; */
+        }
+        
+        .wrap3 {
+            place-items: start;
+        }
+        
+        .wrap4 {
+            place-items: start end;
+            /* 内容在水平居右，垂直居上 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- 3*3 的网格 -->
+        <div class="wrap wrap1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+        <div class="wrap wrap2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+        <div class="wrap wrap3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+        <div class="wrap wrap4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </div>
+</body>
+
+</html>

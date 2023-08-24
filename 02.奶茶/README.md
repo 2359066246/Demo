@@ -23,6 +23,10 @@
 3. 给表单元素 添加了required 属性没用  
    不知道为啥提交没有提示  不确定  是不是 因为我 submit 函数写的有问题嘛
 
+8.20 看了下答案
+1. 发现可以通过  FormData 来获取表单中元素的值
+ https://www.zhihu.com/question/586654469
+
 
 ## 知识点
 
@@ -46,10 +50,37 @@ function getCheckbox(element) {
 2. 阻止submi默认提交事件
 ``` js
 // 阻止submit 按钮的默认提交事件 调用函数返回 false
+// 方法一
 var submit = document.getElementById("submit");
 submit.onclick = function() {
     alert("表单已经提交");
     return false;
-
 }
+
+// 方法二
+
+
+```
+3. 获取表单的值
+ 
+``` html
+  <form id="myForm">
+        <input type="text" name="name" value="张三">
+        <input type="text" name="age" value="18">
+        <input type="submit" value="提交">
+    </form>
+
+    <script>
+        const form = document.querySelector('#myForm');
+        const formData = new FormData(form);
+        // FormData  这个函数 还不太清楚 回头可以去研究一下
+
+        // 获取表单数据中的 name 和 age 字段
+        const name = formData.get('name');
+        const age = formData.get('age');
+
+        // 将表单数据转换为 JSON 字符串
+        const formJson = JSON.stringify(Object.fromEntries(formData.entries()));
+    </script>
+
 ```

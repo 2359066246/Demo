@@ -1,0 +1,65 @@
+{
+  "id": "4223262",
+  "name": "猜拳游戏",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1721670",
+      "name": "玩家-1",
+      "font_class": "player-",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "3886482",
+      "name": "问号-01",
+      "font_class": "wenhao-",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5387463",
+      "name": "机器人",
+      "font_class": "jiqiren",
+      "unicode": "eada",
+      "unicode_decimal": 60122
+    },
+    {
+      "icon_id": "17088810",
+      "name": "猜拳 石头剪刀布 石头",
+      "font_class": "caiquanshitoujiandaobushitou",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "17088811",
+      "name": "猜拳石头剪刀布剪刀",
+      "font_class": "caiquanshitoujiandaobujiandao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "17088812",
+      "name": "猜拳石头剪刀布 布",
+      "font_class": "caiquanshitoujiandaobubu",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "18175862",
+      "name": "问号,帮助",
+      "font_class": "question-full",
+      "unicode": "ea75",
+      "unicode_decimal": 60021
+    },
+    {
+      "icon_id": "18803861",
+      "name": "游戏玩家",
+      "font_class": "youxiwanjia",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    }
+  ]
+}

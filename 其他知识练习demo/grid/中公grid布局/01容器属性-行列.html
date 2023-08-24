@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 1000px;
+            height: 500px;
+            background: yellow;
+            display: grid;
+            margin-top: 50px;
+        }
+        
+        .wrap div {
+            border: 1px solid #000;
+        }
+        
+        .wrap2 {
+            /* 项目的高度的 一个空格就是一个元素 */
+            grid-template-rows: 50px 100px 200px;
+            /* % 项目的 百分之 10 */
+            grid-template-rows: 100px 10% 100px;
+            /* auto  宽度自适应 */
+            grid-template-rows: 100px auto 100px 100px;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-rows: 0.5fr 0.2fr 0.2fr;
+            grid-template-columns: 100px 400px 100px 100px;
+            /* 项目的宽度 */
+        }
+        
+        .wrap3 {
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px; */
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 100px);
+        }
+        
+        .wrap4 {
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: 100px 100px minmax(100px, 200px);
+            /* minmax(100px, 200px)：行高不小于100px，不大于200px */
+        }
+        
+        .wrap5 {
+            /* 这个地方不是很熟悉 */
+            grid-template-rows: [r1] 100px [r2] 100px [r3] 100px;
+            grid-template-columns: [c1] 100px [c2] 100px [c3] 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3*3 的网格 -->
+    <div class="wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="wrap wrap2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="wrap wrap3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="wrap wrap4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <div class="wrap wrap5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+
+</body>
+
+</html>

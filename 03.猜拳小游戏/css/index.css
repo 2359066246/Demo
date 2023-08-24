@@ -1,0 +1,90 @@
+/* 导入重置相关样式 */
+
+@import url(./reset.css);
+
+/* 通用样式  satrt */
+
+body {
+    background-color: #ffec3d;
+}
+
+.icon {
+    width: 5em;
+    height: 5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+p,
+span,
+button,
+input {
+    font-size: 18px;
+}
+
+
+/* 通用样式  end */
+
+.main {
+    width: 600px;
+    min-width: 350px;
+    margin: 50px auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3 {
+    margin: 20px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    /* background-color: antiquewhite; */
+}
+
+.competition {
+    margin: 30px 0;
+    display: flex;
+    min-width: 400px;
+    /* background-color: azure; */
+    justify-content: space-between;
+}
+
+.robot,
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.robot p,
+.robot span,
+.user p,
+.user span {
+    margin-top: 20px;
+}
+
+.result {
+    height: 60px;
+    line-height: 60px;
+    /* background-color: red; */
+}
+
+#result-sapn {
+    display: none;
+}
+
+.button input[type="button"] {
+    height: 35px;
+    padding: 5px;
+    color: #fff;
+    background-color: #222;
+    font-weight: 500;
+}
+
+.from {
+    position: fixed;
+    display: none;
+}

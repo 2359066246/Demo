@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
     <title>我最喜欢的电视剧</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -19,7 +20,10 @@
                 </div>
                 <div class="search">
                     <!-- 这个地方点击事件就会有bug -->
-                    <input type="text" v-model='isShow?"": bk_key' value="" @click="show">
+                    <!-- <input type="text" v-model='isShow?"": bk_key' value="" @click="show">
+                    <input type="button" name=" " id=" " value="进入词条" @click="query"> -->
+                    <!-- placeholder="希望输入的值" -->
+                    <input type="text" value="" placeholder="武林外传">
                     <input type="button" name=" " id=" " value="进入词条" @click="query">
                 </div>
             </div>

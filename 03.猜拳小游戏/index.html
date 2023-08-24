@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜拳小游戏</title>
+    <!-- 图标样式 -->
+    <script src="./fonts/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="h3">
+            <h3>第1回合(共三个回合)</h3>
+        </div>
+        <div class="competition">
+            <div class="robot">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-question-full"></use>
+                  </svg>
+                <p>机器人</p>
+                <span id="span-robot">胜：0 | 负：0</span>
+            </div>
+            <div class="user">
+                <!-- <img src="" alt=""> -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-question-full"></use>
+                  </svg>
+                <p>玩家</p>
+                <span id="span-user">胜：0 | 负：0</span>
+            </div>
+        </div>
+        <div class="result">
+            <span id="result-sapn">本回合机器人赢</span>
+        </div>
+        <div class="button">
+            <input type="button" value="开始下一回合">
+        </div>
+        <div class="from">
+            <form action="" method="post">
+                <label for="select">请选择要出手的手势</label>
+                <select name="select" id="select">
+                    <option value="">石头</option>
+                    <option value="">剪刀</option>
+                    <option value="">布</option>
+                </select>
+                <input type="submit" value="确定">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
