@@ -1,4 +1,6 @@
 # 制作点单系统
+要求地址：https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/02.OrderMilkTea/
+
 
 ## 问题记录
 8.14
@@ -50,16 +52,13 @@ function getCheckbox(element) {
 2. 阻止submi默认提交事件
 ``` js
 // 阻止submit 按钮的默认提交事件 调用函数返回 false
-// 方法一
-var submit = document.getElementById("submit");
-submit.onclick = function() {
-    alert("表单已经提交");
-    return false;
+var submit = document.getElementById("submit")
+submit.onclick = (e) => {
+    // 方法一、原生自带的  阻止默认事件
+    // e.preventDefault();
+    // 反回 false
+    return false
 }
-
-// 方法二
-
-
 ```
 3. 获取表单的值
  

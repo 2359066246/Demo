@@ -7,54 +7,70 @@
     <title>猜拳小游戏</title>
     <!-- 图标样式 -->
     <script src="./fonts/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
-
-
-    <div class="main">
-        <div class="h3">
-            <h3>第1回合(共三个回合)</h3>
-        </div>
-        <div class="competition">
-            <div class="robot">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-question-full"></use>
-                  </svg>
-                <p>机器人</p>
-                <span id="span-robot">胜：0 | 负：0</span>
+    <div class="bg">
+        <div class="main">
+            <div class="h3">
+                <h3>第1回合(共三个回合)</h3>
             </div>
-            <div class="user">
-                <!-- <img src="" alt=""> -->
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-question-full"></use>
+            <div class="competition">
+                <div class="robot">
+                    <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-question-full" id="robot-use"></use>
                   </svg>
-                <p>玩家</p>
-                <span id="span-user">胜：0 | 负：0</span>
+                    <p>
+                        <svg class="icon icon-logo" aria-hidden="true">
+                            <use xlink:href="#icon-jiqiren" id="robot-use"></use>
+                          </svg> 机器人
+                    </p>
+                    <span id="robot-span">胜：0 | 负：0</span>
+                </div>
+                <div class="user">
+                    <!-- <img src="" alt=""> -->
+                    <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-question-full" id="user-use"></use>
+                  </svg>
+                    <p>
+                        <svg class="icon icon-logo" aria-hidden="true">
+                            <use xlink:href="#icon-youxiwanjia" id="robot-use"></use>
+                          </svg> 玩家
+                    </p>
+                    <span id="user-span">胜：0 | 负：0</span>
+                </div>
             </div>
-        </div>
-        <div class="result">
-            <span id="result-sapn">本回合机器人赢</span>
-        </div>
-        <div class="button">
-            <input type="button" value="开始下一回合">
-        </div>
-        <div class="from">
-            <form action="" method="post">
-                <label for="select">请选择要出手的手势</label>
-                <select name="select" id="select">
-                    <option value="">石头</option>
-                    <option value="">剪刀</option>
-                    <option value="">布</option>
+            <div class="result">
+                <span id="result-sapn" class="none">本回合机器人赢</span>
+            </div>
+            <div class="button">
+                <input type="button" value="开始下一回合" id="button">
+            </div>
+            <div class="end none" id="end">
+                <p>恭喜你！获得本轮的胜利</p>
+                <input type="reset" value="重新开始下一局">
+            </div>
+            <div class="from none" id="from" name="from">
+                <form action="" method="post">
+                    <div class="select">
+                        <label for="select">请选择要出手的手势：</label>
+                        <select name="select" id="select">
+                    <option value="st">石头</option>
+                    <option value="jd">剪刀</option>
+                    <option value="b">布</option>
                 </select>
-                <input type="submit" value="确定">
-            </form>
+                    </div>
+                    <div class="submit">
+                        <!-- onclick="submit(e)" -->
+                        <input type="submit" value="确定" id="submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

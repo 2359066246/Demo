@@ -1,4 +1,6 @@
 # 我最喜欢的电视剧(百度百科)
+要求地址：https://note.youdao.com/s/MZhfYg9z
+预览地址：https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/01.MyFavoriteTV/index.html
 
 ## 问题记录
 8.20 
